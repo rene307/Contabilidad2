@@ -666,6 +666,7 @@ margin-bottom:10px; padding:10px 16px; border-radius:999px; background:rgba(255,
 
   .service-photo img {
     height: 240px !important;
+    min-height: 0;
   }
 }
 
@@ -688,7 +689,7 @@ margin-bottom:10px; padding:10px 16px; border-radius:999px; background:rgba(255,
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
   gap: 48px !important;
-  align-items: center !important;
+  align-items: stretch !important;
 }
 
 .service-band-copy {
@@ -744,13 +745,16 @@ margin-bottom:10px; padding:10px 16px; border-radius:999px; background:rgba(255,
 
 .service-photo {
   width: 100%;
+  height: 100%;
+  min-height: 430px;
   border-radius: 20px !important;
   overflow: hidden;
 }
 
 .service-photo img {
   width: 100% !important;
-  height: 350px !important;
+  height: 100% !important;
+  min-height: 430px;
   object-fit: cover !important;
   display: block;
 }
@@ -777,8 +781,14 @@ margin-bottom:10px; padding:10px 16px; border-radius:999px; background:rgba(255,
     max-width: 100%;
   }
 
+  .service-photo {
+    height: auto;
+    min-height: 0;
+  }
+
   .service-photo img {
     height: 320px !important;
+    min-height: 0;
   }
 }
 
